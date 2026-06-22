@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "checkJs": true,
+    "strict": false,
+    "jsx": "react-jsx"
+  },
+  "include": ["**/*", "declarations.d.ts"],
+  "exclude": ["node_modules", "**/node_modules/*"]
+}

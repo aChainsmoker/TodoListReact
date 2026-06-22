@@ -11,7 +11,7 @@ const fetchTodosLoading = () => ({ type: FETCH_TODOS_LOAD });
 const fetchTodos = (todos) => ({ type: FETCH_TODOS, payload: todos });
 const addTodo = (todo) => ({ type: ADD_TODO, payload: todo });
 const deleteTodo = (id) => ({ type: DELETE_TODO, payload: id });
-const toggleTodo = (id) => ({type: TOGGLE_TODO, payload: id})
+const toggleTodo = (updatedTodo) => ({type: TOGGLE_TODO, payload: updatedTodo})
 
 export const fetchTodosAsync = () => async (dispatch) => {
     dispatch(fetchTodosLoading());
@@ -32,6 +32,6 @@ export const deleteTodoAsync = (id) => async (dispatch) => {
 };
 
 export const toggleTodoAsync = (id) => async (dispatch) => {
-    await todoApi.toggleTodo(id);
-    dispatch(toggleTodo(id));
+    const updatedTodo = await todoApi.toggleTodo(id);
+    dispatch(toggleTodo(updatedTodo));
 };

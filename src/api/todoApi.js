@@ -1,9 +1,5 @@
-let todos = [
-  { id: 1, text: 'task1', completed: true },
-  { id: 2, text: 'task2', completed: false },
-  { id: 3, text: 'task3', completed: false },
-];
-let nextId = 4;
+let todos = []
+let nextId = 1;
 
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 

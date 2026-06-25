@@ -4,13 +4,13 @@ import { addTodoAsync } from '@/store/actions/todoActions';
 
 import './AddTodoForm.css';
 
-export default function AddTodoForm () {
+export default function AddTodoForm() {
   const [text, setText] = useState('');
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     const trimmedText = text.trim();
     if (!trimmedText) {
       return;
@@ -24,7 +24,9 @@ export default function AddTodoForm () {
   };
 
   return (
-    <form className="add-todo-form" onSubmit={handleSubmit}>
+    <form className="add-todo-form"
+      onSubmit={handleSubmit}
+    >
       <div className="add-todo-form__wrapper">
         <input
           type="text"
@@ -33,7 +35,9 @@ export default function AddTodoForm () {
           onChange={handleChange}
           placeholder="Enter task here"
         />
-        <button type="submit" className="add-todo-form__submit-btn">
+        <button type="submit"
+          className="add-todo-form__submit-btn"
+        >
           Add Task
         </button>
       </div>

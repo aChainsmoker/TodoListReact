@@ -17,13 +17,11 @@ export const fetchTodosAsync = () => async (dispatch) => {
     dispatch(fetchTodosLoading());
     const todos = await todoApi.fetchTodos();
     dispatch(fetchTodos(todos));
-
 };
 
 export const addTodoAsync = (text) => async (dispatch) => {
     const newTodo = await todoApi.addTodo(text);
     dispatch(addTodo(newTodo));
-
 };
 
 export const deleteTodoAsync = (id) => async (dispatch) => {

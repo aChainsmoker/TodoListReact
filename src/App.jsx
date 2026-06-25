@@ -2,6 +2,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 import AddTodoForm from './components/AddTodoForm/AddTodoForm';
 import TodoList from './components/TodoList/TodoList';
+
 import './App.css';
 
 const App = () => {

@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchTodosAsync, deleteTodoAsync, toggleTodoAsync } from '../../store/actions/todoActions';
 import TodoItem from '../TodoItem/TodoItem';
+
 import './TodoList.css';
 
 export default function TodoList() {

@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+
 import './TodoItem.css';
 
 export default function TodoItem ({ todo, onDelete, onToggle }) {

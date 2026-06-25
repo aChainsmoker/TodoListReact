@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
 import './TodoItem.css';
 
 export default function TodoItem ({ todo, onDelete, onToggle }) {
   return (
     <li className="todo-item">
-      <span className={`todo-item__text ${todo.completed ? 'todo-item__text--completed' : ''}`}>
+      <span className={classNames('todo-item__text', { 'todo-item__text--completed': todo.completed })}>
         {todo.text}
       </span>
       <div className="todo-item__actions">

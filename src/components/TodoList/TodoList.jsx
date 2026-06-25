@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchTodosAsync, deleteTodoAsync, toggleTodoAsync } from '../../store/actions/todoActions';
-import TodoItem from '../TodoItem/TodoItem';
+import { fetchTodosAsync, deleteTodoAsync, toggleTodoAsync } from '@/store/actions/todoActions';
+import TodoItem from '@/components/TodoItem/TodoItem';
 
 import './TodoList.css';
 

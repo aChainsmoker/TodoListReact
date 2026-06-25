@@ -1,0 +1,28 @@
+.add-todo-form__wrapper {
+  display: flex;
+  gap: 12px;
+}
+
+.add-todo-form__input {
+  padding: 8px 12px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  font-size: 14px;
+  flex: 1;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.add-todo-form__input:focus {
+  border-color: blue;
+}
+
+.add-todo-form__submit-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: darkblue;
+  color: white;
+}

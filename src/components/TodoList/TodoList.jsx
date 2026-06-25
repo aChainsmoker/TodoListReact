@@ -24,9 +24,12 @@ export default function TodoList() {
     return (
         <div className="todo-list__container">
             <ul className="todo-list">
-                {todos.length === 0 ? (
+                {todos.length === 0 ? 
+                (
                     <p className="todo-list__empty">There are no tasks...</p>
-                ) : (
+                ) 
+                : 
+                (
                     todos.map((todo) => (
                         <TodoItem
                             key={todo.id}

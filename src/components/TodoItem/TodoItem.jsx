@@ -12,14 +12,14 @@ export default function TodoItem ({ todo, onDelete, onToggle }) {
       <div className="todo-item__actions">
         <button 
           type="button" 
-          className="todo-item__btn todo-item__btn--delete" 
+          className="todo-item__button todo-item__button--delete" 
           onClick={() => onDelete(todo.id)}
         >
           Delete
         </button>
         <button 
           type="button" 
-          className="todo-item__btn todo-item__btn--toggle" 
+          className="todo-item__button todo-item__button--toggle" 
           onClick={() => onToggle(todo.id)}
         >
           {!todo.completed ? "Done" : "Undo"}

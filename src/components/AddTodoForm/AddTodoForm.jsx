@@ -36,7 +36,7 @@ export default function AddTodoForm() {
           placeholder="Enter task here"
         />
         <button type="submit"
-          className="add-todo-form__submit-btn"
+          className="add-todo-form__submit-button"
         >
           Add Task
         </button>
